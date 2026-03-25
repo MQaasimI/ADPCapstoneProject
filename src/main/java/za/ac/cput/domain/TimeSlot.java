@@ -44,20 +44,6 @@ public class TimeSlot {
     /** Returns true if the slot is currently booked. */
     public boolean isBooked() {return isBooked;}
 
-    /** Marks this slot as booked. */
-    public void reserved() {
-        isBooked = true;
-    }
-
-    /** Releases this slot, making it available again. */
-    public void release() {
-        isBooked = false;
-    }
-
-    /** Returns true if the slot is not booked. */
-    public boolean isAvailable() {
-        return !isBooked;
-    }
 
     /**
      * Builder for constructing TimeSlot instances step by step.
