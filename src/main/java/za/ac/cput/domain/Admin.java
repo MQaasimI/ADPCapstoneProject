@@ -33,7 +33,7 @@ public class Admin {
     /**
      * Constructor that uses the Builder object to initialize fields
      */
-    public Admin(Builder builder) {
+    private Admin(Builder builder) {
         this.adminId = builder.adminId;
         this.department = builder.department;
         this.accessLevel = builder.accessLevel;
