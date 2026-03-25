@@ -1,3 +1,8 @@
+/* Admin.java
+Admin model class
+Author: Ethan Williams(221454780)
+Date: 25 March 2026
+*/
 package za.ac.cput.domain;
 
 /**
