@@ -1,3 +1,9 @@
+/* UserFactory.java
+Factory class for creating User objects
+Author: Lyle Solomons (230123872)
+Date: 26 March 2026
+*/
+
 package za.ac.cput.factory;
 
 import za.ac.cput.domain.User;
