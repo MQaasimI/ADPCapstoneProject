@@ -7,7 +7,7 @@ Date: 25 March 2026
 package za.ac.cput.domain;
 
 /**
- * Instructor class represents an instructor in our system with attributes like the id for instructor, employeeCode, the specialization, the rating and the userID.
+ * Instructor class represents an instructor in our system with attributes like the id for instructor, employeeCode, the specialization, the rating and the userid.
  */
 
 public class Instructor {
