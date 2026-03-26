@@ -14,7 +14,7 @@ import java.time.LocalTime;
  * Represents a bookable time slot for a driving lesson.
  */
 public class TimeSlot {
-    private int slotId;
+    private String slotId;
     private LocalTime startTime;
     private LocalTime endTime;
     private LocalDate date;
@@ -36,7 +36,7 @@ public class TimeSlot {
     }
 
     /** Returns the unique slot ID. */
-    public int getSlotId() {return slotId;}
+    public String getSlotId() {return slotId;}
 
     /** Returns the start time of the slot. */
     public LocalTime getStartTime() {return startTime;}
@@ -55,13 +55,13 @@ public class TimeSlot {
      * Builder for constructing TimeSlot instances step by step.
      */
     public static class Builder{
-        private int slotId;
+        private String slotId;
         private LocalTime startTime;
         private LocalTime endTime;
         private LocalDate date;
         private boolean isBooked;
 
-        public Builder setSlotID(int slotId){
+        public Builder setSlotID(String slotId){
             this.slotId = slotId;
             return this;
         }
@@ -99,16 +99,5 @@ public class TimeSlot {
         public TimeSlot build() {
             return new TimeSlot(this);
         }
-    }
-
-    @Override
-    public String toString() {
-        return "TimeSlot{" +
-                "slotId=" + slotId +
-                ", startTime=" + startTime +
-                ", endTime=" + endTime +
-                ", date=" + date +
-                ", isBooked=" + isBooked +
-                '}';
     }
 }

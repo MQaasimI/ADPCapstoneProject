@@ -9,10 +9,10 @@ package za.ac.cput.domain;
  * The Admin class represents an administrator entity in the system.
  */
 public class Admin {
-    private int adminId;
+    private String adminId;
     private String department;
     private int accessLevel;
-    private int userId;
+    private String userId;
 
     /**
      * Default constructor 
@@ -20,16 +20,7 @@ public class Admin {
     public Admin() {
 
     }
-    /*
-     * Parameterized constructor to initialize all fields
-     */
-    public Admin(int adminId, String department, int accessLevel, int userId) {
-        this.adminId = adminId;
-        this.department = department;
-        this.accessLevel = accessLevel;
-        this.userId = userId;
-    }
-
+  
     /**
      * Constructor that uses the Builder object to initialize fields
      */
@@ -42,7 +33,7 @@ public class Admin {
 
     // Getter methods to access private fields
 
-    public int getAdminId() {
+    public String getAdminId() {
         return adminId;
     }
 
@@ -54,7 +45,7 @@ public class Admin {
         return accessLevel;
     }
 
-    public int getUserId() {
+    public String getUserId() {
         return userId;
     }
 
@@ -63,12 +54,12 @@ public class Admin {
      */
     public static class Builder {
 
-        private int adminId;
+        private String adminId;
         private String department;
         private int accessLevel;
-        private int userId;
+        private String userId;
 
-        public Builder setAdminId(int adminId) {
+        public Builder setAdminId(String adminId) {
             this.adminId = adminId;
             return this;
         }
@@ -82,7 +73,7 @@ public class Admin {
             return this;
         }
 
-        public Builder setUserId(int userId) {
+        public Builder setUserId(String userId) {
             this.userId = userId;
             return this;
         }
