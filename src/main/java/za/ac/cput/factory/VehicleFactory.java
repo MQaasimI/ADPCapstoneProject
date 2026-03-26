@@ -9,6 +9,7 @@ import za.ac.cput.domain.Vehicle;
 import za.ac.cput.util.Helper;
 
 
+
 /**
  * A factory class that creates Vehicle objects, ensuring each one is properly set up and ready to use.
  */
