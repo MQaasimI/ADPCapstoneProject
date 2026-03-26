@@ -6,17 +6,16 @@ package za.ac.cput.domain;
 
 //imports
 import java.time.LocalDate;
-import java.util.Objects;
 
 public class MockTest {
-    private int testId;
+    private String testId;
     private LocalDate dateTaken;
     private int score;
     private boolean passed;
 
     
 //default contructor
-    public MockTest{
+    public MockTest() {
     }
     //constructor arg
     private MockTest(Builder builder) {
@@ -27,19 +26,19 @@ public class MockTest {
     }
 
 
-    public int getTestId() { return testId; }
+    public String getTestId() { return testId; }
     public LocalDate getDateTaken() { return dateTaken; }
     public int getScore() { return score; }
     public boolean isPassed() { return passed; }
 
 //Builder pattern
     public static class Builder {
-        private int testId;
+        private String testId;
         private LocalDate dateTaken;
         private int score;
         private boolean passed;
 //setters
-        public Builder setTestId(int testId) {
+        public Builder setTestId(String testId) {
             this.testId = testId;
             return this;
         }
@@ -71,21 +70,6 @@ public class MockTest {
 
             return new MockTest(this);
         }
-    }
-
-    @Override
-    public String toString() {
-        return "MockTest{" +
-                "testId=" + testId +
-                ", dateTaken=" + dateTaken +
-                ", score=" + score +
-                ", passed=" + passed +
-                '}';
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(testId, dateTaken, score, passed);
     }
 }
 

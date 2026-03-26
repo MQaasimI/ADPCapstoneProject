@@ -12,11 +12,11 @@ import java.time.LocalDate;
  * It stores learner-related information and uses the Builder pattern.
  */
 public class Learner {
-    private int learnerId;
+    private String learnerId;
     private String learnerNumber;
     private String licenseType;
     private LocalDate dateRegistered;
-    private int userId;
+    private String userId;
 
     /**
      * Default constructor
@@ -37,7 +37,7 @@ public class Learner {
 
     // Getter methods
 
-    public int getLearnerId() {
+    public String getLearnerId() {
         return learnerId;
     }
 
@@ -53,7 +53,7 @@ public class Learner {
         return dateRegistered;
     }
 
-    public int getUserId() {
+    public String getUserId() {
         return userId;
     }
 
@@ -62,13 +62,13 @@ public class Learner {
      */
     public static class Builder {
 
-        private int learnerId;
+        private String learnerId;
         private String learnerNumber;
         private String licenseType;
         private LocalDate dateRegistered;
-        private int userId;
+        private String userId;
 
-        public Builder setLearnerId(int learnerId) {
+        public Builder setLearnerId(String learnerId) {
             this.learnerId = learnerId;
             return this;
         }
@@ -88,7 +88,7 @@ public class Learner {
             return this;
         }
 
-        public Builder setUserId(int userId) {
+        public Builder setUserId(String userId) {
             this.userId = userId;
             return this;
         }

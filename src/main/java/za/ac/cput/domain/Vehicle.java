@@ -10,7 +10,7 @@ package za.ac.cput.domain;
  * Represents a vehicle available for driving lessons.
  */
 public class Vehicle {
-    private int vehicleID;
+    private String vehicleID;
     private String model;
     private String regNumber;
     private String transmissionType;
@@ -30,7 +30,7 @@ public class Vehicle {
     }
 
     /** Returns the vehicle's unique ID. */
-    public int getVehicleID() {return vehicleID;}
+    public String getVehicleID() {return vehicleID;}
 
     /** Returns the vehicle model name. */
     public String getModel() {return model;}
@@ -48,13 +48,13 @@ public class Vehicle {
      * Builder for constructing Vehicle instances step by step.
      */
     public static class Builder {
-        private int vehicleID;
+        private String vehicleID;
         private String model;
         private String regNumber;
         private String transmissionType;
         private boolean isAvailable;
 
-        public Builder setVehicleID(int vehicleID) {
+        public Builder setVehicleID(String vehicleID) {
             this.vehicleID = vehicleID;
             return this;
         }
@@ -93,17 +93,6 @@ public class Vehicle {
         public Vehicle build() {
             return new Vehicle(this);
         }
-    }
-
-    @Override
-    public String toString() {
-        return "Vehicle{" +
-                "vehicleID=" + vehicleID +
-                ", model='" + model + '\'' +
-                ", regNumber='" + regNumber + '\'' +
-                ", transmissionType='" + transmissionType + '\'' +
-                ", isAvailable=" + isAvailable +
-                '}';
     }
 }
 

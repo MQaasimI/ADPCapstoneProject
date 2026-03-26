@@ -4,14 +4,11 @@ Author Angelo Adams (230450431)
 Date: 04 March 2026 */
 package za.ac.cput.domain;
 
-//Imports
-import java.util.Objects;
-
 public class Schedule {
 
-    private int scheduleId;
-    private int instructorId;
-    private int vehicleId;
+    private String scheduleId;
+    private String instructorId;
+    private String vehicleId;
     private String status;
 
 //default contructor
@@ -27,30 +24,30 @@ public class Schedule {
     }
 
 
-    public int getScheduleId() { return scheduleId; }
-    public int getInstructorId() { return instructorId; }
-    public int getVehicleId() { return vehicleId; }
+    public String getScheduleId() { return scheduleId; }
+    public String getInstructorId() { return instructorId; }
+    public String getVehicleId() { return vehicleId; }
     public String getStatus() { return status; }
 
     // Builder patterns
     public static class Builder {
-        private int scheduleId;
-        private int instructorId;
-        private int vehicleId;
+        private String scheduleId;
+        private String instructorId;
+        private String vehicleId;
         private String status;
 
         //setters
-        public Builder setScheduleId(int scheduleId) {
+        public Builder setScheduleId(String scheduleId) {
             this.scheduleId = scheduleId;
             return this;
         }
 
-        public Builder setInstructorId(int instructorId) {
+        public Builder setInstructorId(String instructorId) {
             this.instructorId = instructorId;
             return this;
         }
 
-        public Builder setVehicleId(int vehicleId) {
+        public Builder setVehicleId(String vehicleId) {
             this.vehicleId = vehicleId;
             return this;
         }
@@ -71,20 +68,5 @@ public class Schedule {
         public Schedule build() {
             return new Schedule(this);
         }
-    }
-
-    @Override
-    public String toString() {
-        return "Schedule{" +
-                "scheduleId=" + scheduleId +
-                ", instructorId=" + instructorId +
-                ", vehicleId=" + vehicleId +
-                ", status='" + status + '\'' +
-                '}';
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(scheduleId, instructorId, vehicleId, status);
     }
 }

@@ -11,7 +11,7 @@ package za.ac.cput.domain;
  */
 
 public class User {
-    private int userId;
+    private String userId;
     private String fullName;
     private String username;
     private String password;
@@ -32,7 +32,7 @@ public class User {
     }
 
     // Getters
-    public int getUserId() {
+    public String getUserId() {
         return userId;
     }
 
@@ -54,14 +54,14 @@ public class User {
 
     // Builder pattern
     public static class Builder {
-        private int userId;
+        private String userId;
         private String fullName;
         private String username;
         private String password;
         private String email;
 
         // Setter methods for Builder, returns a builder for chaining
-        public Builder setUserId(int userId) {
+        public Builder setUserId(String userId) {
             this.userId = userId;
             return this;
         }

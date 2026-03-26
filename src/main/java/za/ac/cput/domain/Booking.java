@@ -15,8 +15,8 @@ public class Booking {
     private String bookingDate;    // Date of the booking
     private String timeSlot;       // Time slot for the booking 
     private String status;         // Current status of the booking
-    private int learnerId;         // ID of the learner who made the booking
-    private int instructorId;      // ID of the instructor assigned to the booking
+    private String learnerId;         // ID of the learner who made the booking
+    private String instructorId;      // ID of the instructor assigned to the booking
 
     /**
      * public default constructor.
@@ -78,7 +78,7 @@ public class Booking {
      * Gets the learner ID.
      * @return The ID of the learner who made the booking
      */
-    public int getLearnerId() {
+    public String getLearnerId() {
         return learnerId;
     }
 
@@ -86,7 +86,7 @@ public class Booking {
      * Gets the instructor ID.
      * @return The ID of the instructor assigned to the booking
      */
-    public int getInstructorId() {
+    public String getInstructorId() {
         return instructorId;
     }
     /**
@@ -100,8 +100,8 @@ public class Booking {
         private String bookingDate;
         private String timeSlot;
         private String status;
-        private int learnerId;
-        private int instructorId;
+        private String learnerId;
+        private String instructorId;
 
         /**
          * Sets the booking ID.
@@ -148,7 +148,7 @@ public class Booking {
          * @param learnerId The ID of the learner making the booking
          * @return The current Builder instance (for method chaining)
          */
-        public Builder setLearnerId(int learnerId) {
+        public Builder setLearnerId(String learnerId) {
             this.learnerId = learnerId;
             return this;
         }
@@ -158,7 +158,7 @@ public class Booking {
          * @param instructorId The ID of the assigned instructor
          * @return The current Builder instance (for method chaining)
          */
-        public Builder setInstructorId(int instructorId) {
+        public Builder setInstructorId(String instructorId) {
             this.instructorId = instructorId;
             return this;
         }

@@ -11,11 +11,11 @@ package za.ac.cput.domain;
  */
 
 public class Instructor {
-    private int instructorId;
+    private String instructorId;
     private String employeeCode;
     private String specialisation;
     private double rating;
-    private int userId;
+    private String userId;
 
     // Default constructor
     public Instructor() {
@@ -32,7 +32,7 @@ public class Instructor {
     }
 
     // Getters
-    public int getInstructorId() {
+    public String getInstructorId() {
         return instructorId;
     }
 
@@ -48,20 +48,20 @@ public class Instructor {
         return rating;
     }
 
-    public int getUserId() {
+    public String getUserId() {
         return userId;
     }
 
     // Builder pattern
     public static class Builder {
-        private int instructorId;
+        private String instructorId;
         private String employeeCode;
         private String specialisation;
         private double rating;
-        private int userId;
+        private String userId;
 
         // Setter methods for Builder (method chaining)
-        public Builder setInstructorId(int instructorId) {
+        public Builder setInstructorId(String instructorId) {
             this.instructorId = instructorId;
             return this;
         }
@@ -81,7 +81,7 @@ public class Instructor {
             return this;
         }
 
-        public Builder setUserId(int userId) {
+        public Builder setUserId(String userId) {
             this.userId = userId;
             return this;
         }

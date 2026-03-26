@@ -12,7 +12,7 @@ package za.ac.cput.domain;
  * Uses the Builder pattern for flexible object construction.
  */
 public class LessonType {
-    private int lessonId;           // Unique identifier for the lesson type
+    private String lessonId;           // Unique identifier for the lesson type
     private String typeName;        // Name of the lesson type (e.g., "Guitar Basics")
     private double price;           // Price per lesson for this lesson type
     private int duration;           // Duration of the lesson in minutes
@@ -45,7 +45,7 @@ public class LessonType {
      * Gets the lesson type ID.
      * @return The unique identifier for this lesson type
      */
-    public int getLessonId() {
+    public String getLessonId() {
         return lessonId;
     }
 
@@ -88,7 +88,7 @@ public class LessonType {
      *
      */
     public static class Builder {
-        private int lessonId;           // Unique identifier for the lesson type
+        private String lessonId;           // Unique identifier for the lesson type
         private String typeName;        // Name of the lesson type
         private double price;           // Price per lesson
         private int duration;           // Duration in minutes
@@ -100,7 +100,7 @@ public class LessonType {
          * @param lessonId The unique identifier for the lesson type
          * @return The current Builder instance (for method chaining)
          */
-        public Builder setLessonId(int lessonId) {
+        public Builder setLessonId(String lessonId) {
             this.lessonId = lessonId;
             return this;  // Returns the Builder object for fluent interface
         }
