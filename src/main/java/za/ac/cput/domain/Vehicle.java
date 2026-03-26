@@ -20,6 +20,7 @@ public class Vehicle {
     //Default constructor.
     public Vehicle() {
     }
+
     //Private constructor for Builder pattern.
     private Vehicle(Builder builder){
         this.vehicleID = builder.vehicleID;
