@@ -8,17 +8,16 @@ import za.ac.cput.domain.MockTest;
 import za.ac.cput.domain.Schedule;
 import za.ac.cput.util.Helper;
 
-import java.time.LocalDate;
-
 //SCheduleFactory class
  
  // Responsible for creating schedule objects with validation.
 public class ScheduleFactory {
 
     public static Schedule createSchedule(String scheduleId, String instructorId, LocalDate date, String status ){
-// Validate scheduleId , instructorId, vehicleId & status (must not be null or empty)
+// Validate scheduleId , instructorId, date & status (must not be null or empty)
         if (Helper.isNullOrEmpty(scheduleId)
             || Helper.isNullOrEmpty(instructorId)
+           
                || Helper.isNullOrEmpty(status)){
            
             

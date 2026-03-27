@@ -10,15 +10,12 @@ import za.ac.cput.util.Helper;
 
 
 
-/**
- * A factory class that creates Vehicle objects, ensuring each one is properly set up and ready to use.
- */
 
+ // A factory class that creates Vehicle objects, ensuring each one is properly set up and ready to use.
 public class VehicleFactory {
 
-    /**
-     * Creates and returns a Vehicle with all attributes.
-     */
+    
+   // Creates and returns a Vehicle with all attributes. 
     public static Vehicle createVehicle(String vehicleID,
                                         String model,
                                         String regNumber,
