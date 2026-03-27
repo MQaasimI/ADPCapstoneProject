@@ -27,7 +27,7 @@ public class MockTestRepositoryTest {
     // Get singleton instance of repository
     private final MockTestRepository mockTestRepository = MockTestRepository.getRepository();
 
-    // Helper method to create a sample admin
+    // Helper method to create a sample mocktest
     private MockTest createMockTest() {
         return MockTestFactory.createMockTest(
                 "A001",
@@ -56,10 +56,10 @@ public class MockTestRepositoryTest {
         MockTest mockTest = createMockTest();
         mockTestRepository.create(mockTest);
 
-        // Retrieve admin by ID
+        // Retrieve mocktest by ID
         MockTest found = mockTestRepository.read(mockTest.getTestId());
 
-        // Check admin exists
+        // Check mocktest exists
         assertNotNull(found);
     }
 
