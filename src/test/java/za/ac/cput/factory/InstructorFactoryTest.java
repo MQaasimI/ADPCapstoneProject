@@ -1,3 +1,9 @@
+/*
+ * InstructorFactoryTest.java
+ * InstructorFactoryTest class
+ * Author: Qaasim Isaacs(222544422)
+ * Date: 26 March 2026
+*/
 package za.ac.cput.factory;
 
 import org.junit.jupiter.api.MethodOrderer;
