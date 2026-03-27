@@ -1,14 +1,16 @@
 /* Schedule.java  
 Schedule model class 
 Author Angelo Adams (230450431) 
-Date: 04 March 2026 */
+Date: 25 March 2026 */
 package za.ac.cput.domain;
+
+import java.time.LocalDate;
 
 public class Schedule {
 
     private String scheduleId;
     private String instructorId;
-    private String vehicleId;
+    private LocalDate date;;
     private String status;
 
 //default contructor
@@ -19,21 +21,21 @@ public class Schedule {
     private Schedule(Builder builder) {
         this.scheduleId = builder.scheduleId;
         this.instructorId = builder.instructorId;
-        this.vehicleId = builder.vehicleId;
+        this.date = builder.date;
         this.status = builder.status;
     }
 
 
     public String getScheduleId() { return scheduleId; }
     public String getInstructorId() { return instructorId; }
-    public String getVehicleId() { return vehicleId; }
+    public LocalDate getdate() { return date; }
     public String getStatus() { return status; }
 
     // Builder patterns
     public static class Builder {
         private String scheduleId;
         private String instructorId;
-        private String vehicleId;
+        private LocalDate date;
         private String status;
 
         //setters
@@ -47,8 +49,8 @@ public class Schedule {
             return this;
         }
 
-        public Builder setVehicleId(String vehicleId) {
-            this.vehicleId = vehicleId;
+        public Builder setDate(LocalDate date) {
+            this.date = date;
             return this;
         }
 
@@ -57,14 +59,19 @@ public class Schedule {
             return this;
         }
 
+        
+         // Copies values from an existing Schedule object to the Builder.
+         // This method is used for creating modified copies of existing schedule types.
         public Builder copy(Schedule schedule) {
             this.scheduleId = schedule.scheduleId;
             this.instructorId = schedule.instructorId;
-            this.vehicleId = schedule.vehicleId;
+            this.date = schedule.date;
             this.status = schedule.status;
             return this;
         }
 
+         // Builds and returns a new Schedule object.
+         // This method validates  and creates the immutable Schedule
         public Schedule build() {
             return new Schedule(this);
         }

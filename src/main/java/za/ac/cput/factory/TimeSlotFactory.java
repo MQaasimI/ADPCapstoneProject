@@ -13,15 +13,14 @@ import java.time.LocalTime;
 
 
 
-/**
- * A factory class that handles creating TimeSlot objects,
- * making sure each one is set up correctly and ready to use.
- */
+
+// A factory class that handles creating TimeSlot objects,
+//making sure each one is set up correctly and ready to use.
+ 
 public class TimeSlotFactory {
 
-    /**
-     * Creates and returns a TimeSlot with all attributes.
-     */
+    
+     // Creates and returns a TimeSlot with all attributes.
     public static TimeSlot createTimeSlot(String slotId,
                                           LocalTime startTime,
                                           LocalTime endTime,
