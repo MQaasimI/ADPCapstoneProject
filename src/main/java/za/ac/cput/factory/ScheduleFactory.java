@@ -8,6 +8,8 @@ import za.ac.cput.domain.MockTest;
 import za.ac.cput.domain.Schedule;
 import za.ac.cput.util.Helper;
 
+import java.time.LocalDate;
+
 //SCheduleFactory class
  
  // Responsible for creating schedule objects with validation.
