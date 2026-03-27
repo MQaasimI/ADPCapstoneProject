@@ -11,29 +11,23 @@ import java.time.LocalTime;
 
 /**
  * Represents a booking entity in the system.
- * This class is immutable - once created, its state cannot be changed.
+ * It uses attributes like id, bookingdate, timeslot and status
  * Uses the Builder pattern for object construction.
  */
 public class Booking {
-    private String bookingId;      // Unique identifier for the booking
-    private LocalDate bookingDate;    // Date of the booking
-    private LocalTime timeSlot;       // Time slot for the booking
-    private String status;         // Current status of the booking
-    private String learnerId;         // ID of the learner who made the booking
-    private String instructorId;      // ID of the instructor assigned to the booking
+    private String bookingId;    
+    private LocalDate bookingDate;    
+    private LocalTime timeSlot;       
+    private String status;         
+    private String learnerId;        
+    private String instructorId;      
 
-    /**
-     * public default constructor.
-     */
+    
+    //public default constructor.
     public Booking() {
     }
 
-    /**
-     * Constructor that accepts a Builder object and initializes the Booking.
-     * This is called by the Builder's build() method.
-     *
-     * @param builder The Builder object containing the booking data
-     */
+    //Private constructor for Builder pattern.
     private Booking(Builder builder) {
         this.bookingId = builder.bookingId;
         this.bookingDate = builder.bookingDate;
@@ -43,63 +37,39 @@ public class Booking {
         this.instructorId = builder.instructorId;
     }
 
-    // Getters - no setters provided to maintain immutability
-    // Once a Booking object is created, its fields cannot be modified
+    // Getters 
 
-    /**
-     * Gets the booking ID.
-     * @return The unique booking identifier
-     */
     public String getBookingId() {
         return bookingId;
     }
 
-    /**
-     * Gets the booking date.
-     * @return The date of the booking
-     */
+   
     public LocalDate getBookingDate() {
         return bookingDate;
     }
 
-    /**
-     * Gets the time slot.
-     * @return The time slot for the booking
-     */
+   
     public LocalTime getTimeSlot() {
         return timeSlot;
     }
 
-    /**
-     * Gets the booking status.
-     * @return The current status of the booking
-     */
+  
     public String getStatus() {
         return status;
     }
 
-    /**
-     * Gets the learner ID.
-     * @return The ID of the learner who made the booking
-     */
+    
     public String getLearnerId() {
         return learnerId;
     }
 
-    /**
-     * Gets the instructor ID.
-     * @return The ID of the instructor assigned to the booking
-     */
+   
     public String getInstructorId() {
         return instructorId;
     }
-    /**
-     * Builder class for constructing Booking objects.
-     * Implements the Builder design pattern to allow flexible object creation
-     * while maintaining immutability of the final Booking object.
-     */
+    
+   //Builder pattern
     public static class Builder {
-        // Fields mirroring the Booking class
         private String bookingId;
         private LocalDate bookingDate;
         private LocalTime timeSlot;
@@ -107,73 +77,42 @@ public class Booking {
         private String learnerId;
         private String instructorId;
 
-        /**
-         * Sets the booking ID.
-         * @param bookingId The unique booking identifier
-         * @return The current Builder instance (for method chaining)
-         */
+        // Setter methods for Builder, returns a builder for chaining
         public Builder setBookingId(String bookingId) {
             this.bookingId = bookingId;
-            return this;  // Returns the Builder object for fluent interface
+            return this;  
         }
 
-        /**
-         * Sets the booking date.
-         * @param bookingDate The date of the booking
-         * @return The current Builder instance (for method chaining)
-         */
+        
         public Builder setBookingDate(LocalDate bookingDate) {
             this.bookingDate = bookingDate;
             return this;
         }
 
-        /**
-         * Sets the time slot.
-         * @param timeSlot The time slot for the booking
-         * @return The current Builder instance (for method chaining)
-         */
+      
         public Builder setTimeSlot(LocalTime timeSlot) {
             this.timeSlot = timeSlot;
             return this;
         }
 
-        /**
-         * Sets the booking status.
-         * @param status The current status of the booking
-         * @return The current Builder instance (for method chaining)
-         */
         public Builder setStatus(String status) {
             this.status = status;
             return this;
         }
 
-        /**
-         * Sets the learner ID.
-         * @param learnerId The ID of the learner making the booking
-         * @return The current Builder instance (for method chaining)
-         */
+    
         public Builder setLearnerId(String learnerId) {
             this.learnerId = learnerId;
             return this;
         }
 
-        /**
-         * Sets the instructor ID.
-         * @param instructorId The ID of the assigned instructor
-         * @return The current Builder instance (for method chaining)
-         */
+   
         public Builder setInstructorId(String instructorId) {
             this.instructorId = instructorId;
             return this;
         }
 
-        /**
-         * Copies values from an existing Booking object to the Builder.
-         * Useful for creating modified copies of existing bookings.
-         *
-         * @param booking The existing Booking object to copy from
-         * @return The current Builder instance (for method chaining)
-         */
+       
         public Builder copy(Booking booking) {
             this.bookingId = booking.bookingId;
             this.bookingDate = booking.bookingDate;
@@ -184,13 +123,7 @@ public class Booking {
             return this;
         }
 
-        /**
-         * Builds and returns a new Booking object.
-         * This method creates the immutable Booking instance using the
-         * values set in the Builder.
-         *
-         * @returns A new Booking object with the configured properties
-         */
+       // builds the user object from the Builder
         public Booking build() {
             return new Booking(this);
         }
