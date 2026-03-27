@@ -17,7 +17,7 @@ public class ScheduleFactory {
 // Validate scheduleId , instructorId, date & status (must not be null or empty)
         if (Helper.isNullOrEmpty(scheduleId)
             || Helper.isNullOrEmpty(instructorId)
-             || Helper.isNullOrEmpty(date)
+           
                || Helper.isNullOrEmpty(status)){
            
             
