@@ -10,6 +10,7 @@ import za.ac.cput.domain.LessonType;
 import java.util.ArrayList;
 import java.util.List;
 
+// Repository class for LessonType entities with CRUD operations
 public class LessonTypeRepository implements IRepository<LessonType, String> {
 
     // Singleton instance of LessonTypeRepository
