@@ -20,6 +20,7 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class AdminFactoryTest {
 
+
     // Test 1: Create a valid admin with all fields
     @Test
     @Order(1)  // Runs first

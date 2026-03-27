@@ -62,4 +62,5 @@ class VehicleFactoryTest {
         assertNull(vehicle);  // Verify vehicle was NOT created
     }
 
+
 }
