@@ -90,7 +90,7 @@ public class ScheduleRepositoryTest {
         // Delete Schedule by ID
         boolean deleted = scheduleRepository.delete(schedule.getScheduleId());
 
-        // Verify deletion  was successful
+        // Verify deletion was successful
         assertTrue(deleted);
     }
 
