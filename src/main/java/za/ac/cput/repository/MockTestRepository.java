@@ -56,7 +56,7 @@ public class MockTestRepository implements IRepository<MockTest, String> {
         return null;
     }
 
-    // Update an existing Admin
+    // Update an existing MockTest
     @Override
     public MockTest update(MockTest mockTest) {
         String id = mockTest.getTestId();
@@ -70,7 +70,7 @@ public class MockTestRepository implements IRepository<MockTest, String> {
         return null;
     }
 
-    // Delete an Admin by ID
+    // Delete an MockTest by ID
     @Override
     public boolean delete(String id) {
         MockTest mockTestToDelete = read(id);
@@ -82,7 +82,7 @@ public class MockTestRepository implements IRepository<MockTest, String> {
         return false;
     }
 
-    // Get all Admin objects
+    // Get all MockTest objects
     @Override
     public List<MockTest> getAll() {
         return mockTestList;

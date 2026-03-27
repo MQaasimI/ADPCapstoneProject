@@ -7,7 +7,7 @@
 
 package za.ac.cput.repository;
 
-import za.ac.cput.domain.MockTest;
+
 import za.ac.cput.domain.Schedule;
 
 import java.util.ArrayList;
@@ -83,7 +83,7 @@ public class ScheduleRepository implements IRepository<Schedule, String> {
         return false;
     }
 
-    // Get all Admin objects
+    // Get all Schedule objects
     @Override
     public List<Schedule> getAll() {
         return scheduleList;
