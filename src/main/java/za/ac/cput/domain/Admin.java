@@ -5,9 +5,7 @@ Date: 25 March 2026
 */
 package za.ac.cput.domain;
 
-/**
- * The Admin class represents an administrator entity in the system.
- */
+//The Admin class represents an administrator entity in the system.
 public class Admin {
     private String adminId;
     private String department;
