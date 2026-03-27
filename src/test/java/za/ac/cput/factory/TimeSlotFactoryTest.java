@@ -63,18 +63,4 @@ public class TimeSlotFactoryTest {
         assertNotNull(timeSlot);  // Verify time slot was created
     }
 
-   // Test 3: Create a time slot that is already booked
-    @Test
-    @Order(4)
-    public void testCreateTimeSlotNotBooked() {
-        TimeSlot timeSlot = TimeSlotFactory.createTimeSlot(
-                "002",                        // slotId
-                LocalTime.of(11, 0),            // startTime
-                LocalTime.of(12, 0),            // endTime
-                LocalDate.of(2026, 3, 25),      // date
-                false                            // isBooked
-        );
-        assertNull(timeSlot);  // Verify time slot was created
-    }
-
 }

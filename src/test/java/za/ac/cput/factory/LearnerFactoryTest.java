@@ -15,6 +15,7 @@ import za.ac.cput.domain.Learner;
 import java.time.LocalDate;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 // Enables tests to run in order using @Order annotations
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
