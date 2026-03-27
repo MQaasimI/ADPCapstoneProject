@@ -14,10 +14,12 @@ import org.junit.jupiter.api.TestMethodOrder;
 import za.ac.cput.domain.Admin;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 // Enables tests to run in order using @Order
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class AdminFactoryTest {
+
 
     // Test 1: Create a valid admin with all fields
     @Test
