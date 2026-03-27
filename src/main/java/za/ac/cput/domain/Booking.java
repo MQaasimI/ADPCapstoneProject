@@ -8,6 +8,12 @@ Booking model class
 Author: Rameez Karriem (222357320)
 Date: 25 March 2026
 */
+/*
+ * Booking.java
+ * Booking class
+ * Author: Rameez Karriem (222357320)
+ * Date: 25 March 2026
+ */
 package za.ac.cput.domain;
 
 import java.time.LocalDate;

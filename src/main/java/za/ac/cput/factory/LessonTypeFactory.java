@@ -3,6 +3,12 @@ LessonTypeFactory model class
 Author: Rameez Karriem (222357320)
 Date: 26 March 2026
 */
+/*
+ * LessonTypeFactory.java
+ * LessonTypeFactory class
+ * Author: Rameez Karriem (222357320)
+ * Date: 26 March 2026
+ */
 package za.ac.cput.factory;
 
 import za.ac.cput.domain.LessonType;

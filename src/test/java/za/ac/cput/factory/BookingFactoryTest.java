@@ -1,3 +1,9 @@
+/*
+ * BookingFactoryTest.java
+ * BookingFactoryTest class
+ * Author: Rameez Karriem (222357320)
+ * Date: 26 March 2026
+ */
 package za.ac.cput.factory;
 
 import org.junit.jupiter.api.MethodOrderer;

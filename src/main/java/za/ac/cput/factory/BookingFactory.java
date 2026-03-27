@@ -3,6 +3,12 @@ BookingFactory class
 Author: Rameez Karriem (222357320)
 Date: 26 March 2026
 */
+/*
+ * BookingFactory.java
+ * BookingFactory class
+ * Author: Rameez Karriem (222357320)
+ * Date: 26 March 2026
+ */
 package za.ac.cput.factory;
 import za.ac.cput.domain.Booking;
 import za.ac.cput.util.Helper;

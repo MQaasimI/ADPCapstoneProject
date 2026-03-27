@@ -8,6 +8,12 @@ LessonType model class
 Author: Rameez Karriem (222357320)
 Date: 25 March 2026
 */
+/*
+ * LessonType.java
+ * LessonType class
+ * Author: Rameez Karriem (222357320)
+ * Date: 25 March 2026
+ */
 package za.ac.cput.domain;
 
 import java.time.LocalTime;
