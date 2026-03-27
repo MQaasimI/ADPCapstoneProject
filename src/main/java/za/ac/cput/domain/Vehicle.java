@@ -6,9 +6,7 @@
 
 package za.ac.cput.domain;
 
-/**
- * Represents a vehicle available for driving lessons.
- */
+// Represents a vehicle available for driving lessons.
 public class Vehicle {
     private String vehicleID;
     private String model;
@@ -30,24 +28,23 @@ public class Vehicle {
         this.isAvailable = builder.isAvailable;
     }
 
-    /** Returns the vehicle's unique ID. */
+    // Returns the vehicle's unique ID. 
     public String getVehicleID() {return vehicleID;}
 
-    /** Returns the vehicle model name. */
+    // Returns the vehicle model name. 
     public String getModel() {return model;}
 
-    /** Returns the registration number. */
+    // Returns the registration number.
     public String getRegNumber() {return regNumber;}
 
-    /** Returns the transmission type (e.g. manual, automatic). */
+    // Returns the transmission type (e.g. manual, automatic). 
     public String getTransmissionType() {return transmissionType;}
 
-    /** Returns true if the vehicle is available for booking. */
+   // Returns true if the vehicle is available for booking. 
     public boolean isAvailable() {return isAvailable;}
 
-    /**
-     * Builder for constructing Vehicle instances step by step.
-     */
+   
+   // Builder for constructing Vehicle instances step by step.
     public static class Builder {
         private String vehicleID;
         private String model;

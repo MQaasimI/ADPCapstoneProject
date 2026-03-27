@@ -1,5 +1,6 @@
 /*
  * BookingRepository.java
+ * BookingRepository class
  * Author: Rameez Karriem (222357320)
  * Date: 27 March 2026
  */
