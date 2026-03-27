@@ -1,7 +1,8 @@
 /* MockTest.java 
 MockTest model class
 Author Angelo Adams (230450431)
-Date: 25 March 2026 */
+Date: 25 March 2026
+*/
 package za.ac.cput.domain;
 
 //imports
@@ -74,10 +75,9 @@ public class MockTest {
             this.passed = passed;
             return this;
         }
-/**
-         * Copies values from an existing MockTest object to the Builder.
-         * This method is used for creating modified copies of existing MockTest types.
-        */
+
+         // Copies values from an existing MockTest object to the Builder.
+         // This method is used for creating modified copies of existing MockTest types.
         public Builder copy(MockTest mockTest) {
             this.testId = mockTest.testId;
             this.learnerId = mockTest.learnerId;
@@ -86,12 +86,9 @@ public class MockTest {
             this.passed = mockTest.passed;
             return this;
         }
- /**
-         * Builds and returns a newMockTest object.
-         * This method validates  and creates the immutable Schedule
-         
-         * @return A new MockTest object with the properties configured
-         */
+ 
+         // Builds and returns a newMockTest object.
+         // This method validates  and creates the immutable Schedule
         public MockTest build() {
 
             return new MockTest(this);
